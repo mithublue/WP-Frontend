@@ -1,0 +1,391 @@
+.fie[v-cloak] {
+  display: none;
+}
+ld-panel {
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: -10px;
+  text-align: center;
+  margin: 10px 0;
+}
+.row-panel a,
+.field-panel a {
+  border: 1px solid #ccc;
+  padding: 10px 14px;
+  text-decoration: none;
+  color: #111;
+  display: inline-block;
+  margin-bottom: 5px;
+  border-radius: 0;
+  margin-left: -5px;
+  background: #ffffff;
+}
+.row-panel a:hover,
+.field-panel a:hover {
+  background: #015395;
+  color: #ffffff;
+}
+.wpfront_btn-add_row {
+  border: 1px solid #ccc;
+  padding: 10px 14px;
+  text-decoration: none;
+  color: #111;
+  border-radius: 3px;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+.wpfront_btn-add_tab {
+  border: 1px solid #ccc;
+  padding: 5px 14px;
+  text-decoration: none;
+  color: #111;
+  border-radius: 3px;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+.wpfront_center {
+  text-align: center;
+}
+.wpfront_btn-flat {
+  border: 1px solid #ccc;
+  padding: 5px 14px;
+  text-decoration: none;
+  color: #111;
+  border-radius: 3px;
+  display: inline-block;
+}
+.wpfront_left {
+  text-align: right;
+}
+.wpfront_right {
+  text-align: right;
+}
+.wpfront_dib {
+  display: inline-block;
+}
+.wpfront_db {
+  display: block;
+}
+.field-panel-list {
+  position: absolute;
+  z-index: 9999999;
+  padding: 5px;
+  right: 0;
+  left: 0;
+}
+.field-panel-list a {
+  position: absolute;
+  right: 5px;
+}
+.field-panel-list ul {
+  margin: 0;
+  padding: 0;
+}
+.field-panel-list li {
+  list-style: none;
+  float: left;
+  /*border: 1px solid #ddd;*/
+  margin: 0;
+  cursor: pointer;
+  text-align: center;
+  width: 20%;
+  /*padding: 5px 10px;*/
+  /*border-radius: 3px;*/
+}
+.field-panel-list li button {
+  border-radius: 0;
+  background: #015395;
+  color: #FFFFFF;
+  word-wrap: break-word;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  display: block;
+  width: 100%;
+  /*border-radius: 0;
+            background: #015395;
+            color: #FFFFFF;*/
+}
+.field-panel-list li .field-panel-list-close:hover {
+  background: #d71a1a;
+  color: #FFFFFF;
+}
+.field-panel-list li:hover {
+  /*background: #cccccc;
+            color: #ffffff;*/
+}
+.el-button {
+  text-decoration: none;
+}
+/*** Edit ***/
+.wpfront_form_builder_panel {
+  padding-bottom: 500px;
+}
+.wpfront-edit-mode {
+  position: relative;
+  z-index: 0;
+}
+.wpfront-edit-mode .focused_row {
+  border: 1px solid #CCCCCC;
+  margin-bottom: 10px;
+}
+.wpfront-edit-mode .focused_row .el-row {
+  padding: 5px;
+  min-height: 50px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding-bottom: 50px;
+}
+.wpfront-edit-mode .focused_row .input-col {
+  position: relative;
+  z-index: 999999;
+}
+.wpfront-edit-mode .focused_row .input-col a {
+  text-decoration: none;
+  padding: 5px 11px;
+  background: #333;
+  color: #fff;
+}
+.wpfront_input_panel {
+  position: absolute;
+  text-align: center;
+  right: 0;
+  left: 0;
+  bottom: -15px;
+  z-index: 99999;
+}
+.wpfront_input_panel a {
+  /*padding: 5px 15px;*/
+  display: inline;
+  border-radius: 0;
+  margin-left: -3px;
+}
+.wpfront_input_panel .wpfront_grid_panel {
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: -20px;
+  background: #ffffff;
+  padding: 5px;
+  border: 1px solid #ddd;
+  display: inline;
+  text-align: center;
+}
+.wpfront_input_panel .wpfront_grid_panel a {
+  padding: 5px 10px;
+  display: inline-block;
+  margin: 2px;
+  border: 1px solid #dddddd;
+}
+/**custom**/
+.wpfront_entry_single_view table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100% !important;
+  border: 1px solid #ddd !important;
+}
+.wpfront_entry_single_view th,
+.wpfront_entry_single_view td {
+  text-align: left;
+  padding: 16px;
+}
+.wpfront_entry_single_view tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+.wpfront_form_type h4 {
+  margin-bottom: 10px;
+}
+.wpfront_form_type h5 {
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+.wpfront-field-settings-panel {
+  text-align: left;
+  position: absolute;
+  right: 0;
+  left: 0;
+  padding: 10px;
+  overflow: hidden;
+  margin-top: 5px;
+}
+.wpfront-field-settings-panel .el-form-item {
+  margin-bottom: 0;
+}
+.wpfront-field-settings-panel .wpfront-field-settings-action {
+  text-align: right;
+  display: block;
+}
+.wpfront-field-settings-panel .el-form-item__content {
+  padding-right: 5px;
+}
+.wpfront_tab-panel {
+  width: 500px;
+  position: absolute;
+  z-index: 999999;
+  left: 33%;
+}
+.cc-edit-panel {
+  max-height: 400px;
+  overflow-y: scroll;
+}
+.cc-edit-panel .el-col-24 {
+  margin-bottom: 20px;
+  padding: 0 10px;
+}
+.cc-edit-panel .el-input__inner {
+  margin-top: 10px;
+}
+.cc-edit-panel .el-row {
+  padding: 0;
+  min-height: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.panel-repeatable {
+  border: 1px solid #dddddd;
+  padding: 5px;
+}
+.wpfront-menu a {
+  text-decoration: none;
+}
+.wpfront-menu .is-active {
+  background: #409EFF !important;
+  color: #ffffff !important;
+}
+.pro_fields {
+  border: 1px solid #cc0000;
+  padding: 5px;
+  color: #cc0000;
+  padding: 8px 10px !important;
+  border-radius: 5px;
+}
+.pro_fields p.description {
+  color: #cc0000;
+}
+/*common*/
+.wpfront_layout_cornered input[type="text"],
+.wpfront_layout_cornered input[type="email"],
+.wpfront_layout_cornered input[type="url"],
+.wpfront_layout_cornered input[type="password"],
+.wpfront_layout_cornered input[type="search"],
+.wpfront_layout_cornered input[type="number"],
+.wpfront_layout_cornered input[type="tel"],
+.wpfront_layout_cornered input[type="range"],
+.wpfront_layout_cornered input[type="date"],
+.wpfront_layout_cornered input[type="month"],
+.wpfront_layout_cornered input[type="week"],
+.wpfront_layout_cornered input[type="time"],
+.wpfront_layout_cornered input[type="datetime"],
+.wpfront_layout_cornered input[type="datetime-local"],
+.wpfront_layout_cornered input[type="color"],
+.wpfront_layout_cornered textarea {
+  border-radius: 0px;
+}
+.active_col_btn {
+  background: #fff !important;
+  color: #000 !important;
+  border: 2px solid #000 !important;
+}
+.wpfront_tabs .tabs {
+  background: #015395;
+}
+.wpfront_tabs .tabs a {
+  padding: 15px 10px;
+  display: block;
+  /*float: left;*/
+  text-align: center;
+  font-weight: bold;
+  font-size: 15px;
+  text-decoration: none;
+  color: #fff;
+}
+.wpfront_tabs .tabs a:hover {
+  background: #ecf5ff;
+  color: #3a8ee6;
+}
+.wpfront_tabs .tab_cotnent {
+  background: #FFFFFF;
+}
+.wpfront_element_tree .wpfront_tree_tab .wpfront_tree_tab_span {
+  display: block;
+  background: #555;
+  padding: 10px 10px;
+  color: #fff;
+}
+.wpfront_element_tree .wpfront_tree_tab .wpfront_tree_tab_span a {
+  text-decoration: none;
+  color: #FFFFFF;
+  border: 1px solid #FFFFFF;
+  padding: 0px 5px 2px 5px;
+  right: 10px;
+}
+.wpfront_element_tree .wpfront_tree_tab .wpfront_tree_placeholder {
+  margin-left: 10px;
+}
+.wpfront_element_tree .wpfront_tree_placeholder .wpfront_tree_placeholder_span {
+  display: block;
+  background: #555;
+  padding: 10px 10px;
+  color: #fff;
+  margin-top: 3px;
+}
+.wpfront_element_tree .wpfront_tree_placeholder .wpfront_tree_placeholder_span a {
+  text-decoration: none;
+  color: #FFFFFF;
+  border: 1px solid #FFFFFF;
+  padding: 0px 5px 2px 5px;
+  right: 10px;
+}
+.wpfront_element_tree li.wpfront_tree_field {
+  margin-left: 10px;
+}
+.wpfront_element_tree li.wpfront_tree_field .wpfront_tree_field_span {
+  border: 1px solid #015395;
+  display: block;
+  padding: 5px 10px;
+  margin-top: 3px;
+}
+.wpfront_element_tree li.wpfront_tree_field .wpfront_tree_field_span a {
+  text-decoration: none;
+  border: 1px solid #015395;
+  padding: 0px 5px 2px 5px;
+  right: 10px;
+}
+.wpfront_element_tree li.wpfront_tree_field .wpfront_tree_field_settings {
+  border: 1px solid #ccc;
+  padding: 0 10px;
+}
+.action_panel {
+  padding: 10px;
+  background: #fff;
+}
+.wpfront-form-types .form-create {
+  background: #015395;
+  border-color: #015395;
+}
+/*
+Generic Styling, for Desktops/Laptops
+*/
+.wpfrontend-section-posts {
+  /* Zebra striping */
+}
+.wpfrontend-section-posts table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.wpfrontend-section-posts tr:nth-of-type(odd) {
+  background: #eee;
+}
+.wpfrontend-section-posts th {
+  background: #333;
+  color: white;
+  font-weight: bold;
+}
+.wpfrontend-section-posts td,
+.wpfrontend-section-posts th {
+  padding: 6px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+/*# sourceMappingURL=style.css.map */
