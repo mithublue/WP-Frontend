@@ -114,7 +114,7 @@ trait Wpfront_Registration {
 			<?php
 		}
 		else {
-			wp_redirect( home_url() ); exit;
+		    _e( 'You are already logged in.');
 		}
 	}
 

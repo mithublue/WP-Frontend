@@ -19,6 +19,9 @@ class Wpfront_Ajax_actions {
         //
 	    add_action( 'wp_ajax_wpfront_populate_form_type_data', array( __CLASS__, 'populate_form_type_data' ) );
 	    add_action( 'wp_ajax_wpfront_get_tax_terms', array( __CLASS__, 'get_tax_terms' ) );
+
+	    add_action( 'wp_ajax_cc_get_news', array( __CLASS__, 'cc_get_news' ) );
+	    add_action( 'wp_ajax_sm_dissmiss_news_notice', array( __CLASS__, 'dissmiss_news_notice' ) );
     }
 
     public static function wpfront_update_form() {
@@ -484,6 +487,30 @@ WHERE ID IN ($ids);";
 		    }
 	    }
     }
+
+    public static function cc_get_news() {
+	    $response = wp_remote_get( 'http://blog.cybercraftit.com/api/get_category_posts?slug=news&count=10' );
+	    $response = $response['body'];
+	    $response = json_decode($response,true);
+	    wp_send_json_success(array(
+	    	'response' => $response
+	    ));
+    }
+
+	public static function dissmiss_news_notice() {
+		$notices = sm_get_notice('sm_admin_notices' );
+		$notices['news_notice']['is_dismissed'] = true;
+		if( isset( $_POST['last_news_date'] ) ) {
+			$notices['news_notice']['last_news_date'] = $_POST['last_news_date'];
+		} else {
+			$notices['news_notice']['last_news_date'] = 0;
+		}
+
+		if ( update_option( 'sm_admin_notices', $notices ) ) {
+			wp_send_json_success();
+		}
+		exit;
+	}
 }
 
 Wpfront_Ajax_actions::init();

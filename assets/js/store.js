@@ -270,7 +270,6 @@ var store_obj = {
                     type: type
                 },
                 function (data) {
-                    console.log(data);
                     if( data.success === true ) {
                         state.formdata = wpfront_reset_fields(data.data.form_type_data);
                         state.form_settings.form_settings = Object.assign({},state.form_settings.form_settings, data.data.form_settings.form_settings) ;
@@ -618,7 +617,6 @@ var store_obj = {
                     action: 'wpfront_get_tax_terms'
                 },
                 function (data) {
-                    console.log(data);
                 }
             )
         }

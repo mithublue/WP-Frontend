@@ -52,6 +52,7 @@ class Wpfront_Admin {
         }
 
 	    $submenu['wpfront'][] = array( __( 'Help', 'wpfront' ), 'manage_options', 'admin.php?page=wpfront#/help' );
+	    $submenu['wpfront'][] = array( __( 'News', 'wpfront' ), 'manage_options', 'admin.php?page=wpfront#/cc-news' );
 
         add_action( 'load-'. $hook, array( $this, 'load_scripts' ) );
     }
@@ -67,7 +68,12 @@ class Wpfront_Admin {
         wp_enqueue_style('wpfront-style-css', WPFRONT_ASSET_PATH.'/css/style.css' );
         wp_enqueue_style('wpfront-element-css', WPFRONT_ASSET_PATH.'/css/element.css' );
 
-        wp_enqueue_script('wpfront-vue', WPFRONT_ASSET_PATH.'/js/vue.js', array(), false, true );
+        if( !WPFRONT_PRODUCTION ) {
+	        wp_enqueue_script('wpfront-vue', WPFRONT_ASSET_PATH.'/js/vue.js', array(), false, true );
+        } else {
+	        wp_enqueue_script('wpfront-vue', WPFRONT_ASSET_PATH.'/js/vue.min.js', array(), false, true );
+        }
+
         wp_enqueue_script('wpfront-vue-router', WPFRONT_ASSET_PATH.'/js/vue-router.min.js', array( 'wpfront-vue' ), false, true );
         wp_enqueue_script('wpfront-vuex', WPFRONT_ASSET_PATH.'/js/vuex.js', array( 'wpfront-vue' ), false, true );
         wp_enqueue_script('wpfront-functions', WPFRONT_ASSET_PATH.'/js/functions.js' );
