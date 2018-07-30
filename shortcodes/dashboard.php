@@ -71,14 +71,14 @@ trait Wpfront_Dashboard {
 		}
 		?>
 		<div id="wpfrontend-public-dashboard">
-			<el-row :gutter="15">
-				<el-col :sm="6">
+			<div class="oh">
+				<div class="dashboard-nav fl p10">
 					<ul>
-						<li><a href="<?php echo add_query_arg( array( 'section' => 'dashboard' ), parse_url($_SERVER["REQUEST_URI"], PHP_URL_PATH) );?>"><?php _e( 'Dashboard', 'wpfront' ); ?></a></li>
-						<li><a href="<?php echo add_query_arg( array( 'section' => 'posts' ), parse_url($_SERVER["REQUEST_URI"], PHP_URL_PATH) );?>"><?php _e( 'Posts', 'wpfront' ); ?></a></li>
+						<li class="<?php echo Wpfront_Functions::dashboard_active_class('dashboard' ) ? 'active' : ''; ?>"><a href="<?php echo add_query_arg( array( 'section' => 'dashboard' ), parse_url($_SERVER["REQUEST_URI"], PHP_URL_PATH) );?>"><?php _e( 'Dashboard', 'wpfront' ); ?></a></li>
+						<li class="<?php echo Wpfront_Functions::dashboard_active_class('posts' ) ? 'active' : ''; ?>"><a href="<?php echo add_query_arg( array( 'section' => 'posts' ), parse_url($_SERVER["REQUEST_URI"], PHP_URL_PATH) );?>"><?php _e( 'Posts', 'wpfront' ); ?></a></li>
 					</ul>
-				</el-col>
-				<el-col :sm="18">
+				</div>
+				<div class="dashboard-content fl p10">
                     <?php
                     if( isset( $_GET['section'] ) && method_exists( $this, 'section_'.$_GET['section'] ) ) {
                         $this->{'section_'.$_GET['section']}();
@@ -86,8 +86,8 @@ trait Wpfront_Dashboard {
                         $this->section_dashboard();
                     }
                     ?>
-				</el-col>
-			</el-row>
+				</div>
+			</div>
 		</div>
 	<?php
 	}
@@ -96,7 +96,9 @@ trait Wpfront_Dashboard {
 	 * Dashboard
 	 */
 	public function section_dashboard() {
-	    echo 'This is dashboard';
+	    ?>
+        <h3><?php _e( 'Hello '.get_userdata(get_current_user_id())->display_name); ?></h3>
+        <?php
     }
 
     public function section_posts() {
@@ -165,14 +167,15 @@ trait Wpfront_Dashboard {
                                 <td>
 					                <?php if( Wpfront_Functions::get_settings('user_can_edit_post') ) {
 						                if( is_array( Wpfront_Functions::get_settings('editable_post_status') ) && in_array( get_post_status(), Wpfront_Functions::get_settings('editable_post_status') ) ) { ?>
-                                            <a href="<?php echo add_query_arg( array('pid' => get_the_ID() ), $_SERVER['REQUEST_URI'] ); ?>" class="el-button el-button--default"
+                                            <a href="<?php echo add_query_arg( array('pid' => get_the_ID() ), $_SERVER['REQUEST_URI'] ); ?>"
+                                               class="el-button el-button--default el-button--mini"
                                             ><?php _e( 'Edit', 'wpfront' ); ?></a>
 						                <?php }
 					                }
 					                if( Wpfront_Functions::get_settings('user_can_delete_post') ) {
 						                if( is_array( Wpfront_Functions::get_settings('deletable_post_status') ) && in_array( get_post_status(), Wpfront_Functions::get_settings('deletable_post_status') ) ) { ?>
                                             <a href="<?php echo add_query_arg( array('delete_id' => get_the_ID() ), $_SERVER['REQUEST_URI'] ); ?>"
-                                                   class="el-mini el-button el-button--danger">
+                                                   class="el-button--mini el-button el-button--danger">
                                                 <?php _e( 'Delete', 'wpfront' ); ?> </a>
 						                <?php }
 					                } ?>

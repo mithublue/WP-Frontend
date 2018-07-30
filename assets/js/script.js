@@ -15,7 +15,8 @@ var wpfront_routes = [
     {path: '/forms/entries/:form_type/view/:id', component: wpfrontend_entry},
     {path: '/help', component: wpfrontend_help},
     {path: '/forms/promo-contact-form', component: promo_contact_form},
-    {path: '/forms/promo-registration-form', component: promo_registration_form}
+    {path: '/forms/promo-registration-form', component: promo_registration_form},
+    {path: '/cc-news', component: cc_news},
 ];
 
 wpfront_routes = wpfront_apply_filters( 'wpfront_routes', wpfront_routes );

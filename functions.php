@@ -5,6 +5,13 @@ if( !function_exists('wpfront_pri' ) ) {
         echo '<pre>'; print_r($data);echo '</pre>';
     }
 }
+if( !function_exists( 'sm_get_notice' ) ) {
+	function sm_get_notice ( $notice_name =  'sm_admin_notices'  ) {
+		$notice = get_option( $notice_name );
+		if( !is_array( $notice ) ) $notice = array();
+		return $notice;
+	}
+}
 
 class Wpfront_Functions {
 
@@ -208,5 +215,9 @@ class Wpfront_Functions {
 
 	    }
 	    return false;
+    }
+
+    public static function dashboard_active_class( $section ) {
+    	if( isset( $_GET['section'] ) && $_GET['section'] == $section ) return true;
     }
 }

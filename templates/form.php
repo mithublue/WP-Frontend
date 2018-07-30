@@ -244,8 +244,6 @@
         },
         computed: {
             field_attr: function () {
-                console.log('ha ha ha');
-                console.log(this.$store.getters.field_attr);
                 return this.$store.getters.field_attr;
             },
             form: function () {
@@ -267,7 +265,6 @@
                 return this.$store.getters.notice;
             },
             formdata: function () {
-                console.log(this.$store.getters.formdata);
                 return this.$store.getters.formdata;
             },
             is_multistep: function () {

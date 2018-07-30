@@ -19,6 +19,7 @@ define( 'WPFRONT_VERSION', '1.0' );
 define( 'WPFRONT_ROOT', dirname(__FILE__) );
 define( 'WPFRONT_ASSET_PATH', plugins_url('assets',__FILE__) );
 define( 'WPFRONT_BASE_FILE', __FILE__ );
+define( 'WPFRONT_PRODUCTION', true );
 
 Class Wpfront_Init {
 	/**
@@ -75,6 +76,8 @@ Class Wpfront_Init {
 
 		include_once 'submission-process.php';
 		include_once 'wpfrontend-applications.php';
+
+		require_once dirname(__FILE__).'/news.php';
 
 		if( Wpfront_Functions::is_pro() ) {
 			include_once 'pro/loader.php';

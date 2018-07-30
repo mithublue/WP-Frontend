@@ -1,3 +1,28 @@
+/**news**/
+.cc_news_container .read_more_news {
+  display: block;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  color: #000;
+  background: #ffffff;
+  border: 1px solid #dddddd;
+}
+.each_container {
+  background: #ffffff;
+  margin-bottom: 10px;
+}
+.cc_news_notice_container {
+  overflow: hidden;
+  padding: 10px;
+}
+.cc_news_notice_container .thumbnail {
+  float: left;
+}
+.cc_news_notice_container .news_content {
+  overflow: hidden;
+  margin-left: 215px;
+}
 .fie[v-cloak] {
   display: none;
 }
@@ -386,6 +411,19 @@ Generic Styling, for Desktops/Laptops
   padding: 6px;
   border: 1px solid #ccc;
   text-align: left;
+}
+/**dashboard**/
+#wpfrontend-public-dashboard .dashboard-nav {
+  width: 20%;
+}
+#wpfrontend-public-dashboard .dashboard-nav ul {
+  list-style-type: none;
+}
+#wpfrontend-public-dashboard .dashboard-nav ul li.active a {
+  color: #aaaaaa;
+}
+#wpfrontend-public-dashboard .dashboard-content {
+  width: 80%;
 }
 
 /*# sourceMappingURL=style.css.map */
