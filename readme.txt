@@ -1,6 +1,6 @@
 === WP Frontend ===
 Contributors: cybercraftit, mithublue
-Tags: Forms, registration, profile-builder, login, registration, contact, contact form, post form, form, forms, contact form, frontend, frontend post, custom form, form builder, form creator, form manager, form creation, contact forms, custom forms, forms builder, forms creator, forms manager, forms creation, post form, product form, dashboard builder, dashboard
+Tags: wp frontend, wp front, user frontend, frontend submission, frontend posting, wp user frontend, frontend dashboard, Forms, registration, profile-builder, login, registration, contact, contact form, post form, form, forms, contact form, frontend, frontend post, custom form, form builder, form creator, form manager, form creation, contact forms, custom forms, forms builder, forms creator, forms manager, forms creation, post form, product form, dashboard builder, dashboard
 Requires at least: 3.0.1
 Tested up to: 4.9.7
 Stable tag: 1.0.0
@@ -15,6 +15,10 @@ Want to let users create post from and have their own dashboard in frontend and 
 custom ones to match with your theme ? These are exactly what this plugin does.
 
 Additionally, you will have lots of options to customize everything to your needs.
+
+== Pro Version ==
+
+Get your pro version here <a href="https://cybercraftit.com/wp-frontend-pro/" target="_blank">WP Frontend Pro</a>
 
 == WP Frontend Features ==
 
@@ -53,20 +57,20 @@ Lots of fields are there in the form builder to create form for post. 30+ Fields
 
 No coding , no worry, drag and drop form builder for you.
 
-=== Visual form builder. You will see the output in realtime. ===
+=== Visual form builder. You will see the output in realtime ===
 
-=== Blazing fast admin panel. ===
+=== Blazing fast admin panel ===
 
 Page reloading is boring and time consuming, so is to us. That's why we have kept focus on smooth and fastest user experience, and for this purpose, WP Frontend
 is made as non reloading app.
 
 === Ajax form submission. Form can be submitted without page refresh ===
 
-=== Schedule form submission.  ===
+=== Schedule form submission ===
 
 Admin can bind post creation in time limit. He can set the schedule within which the form will be accessible
 
-=== Set redirection after successful post submission. ===
+=== Set redirection after successful post submission ===
 
 === Customizable message on post submission ===
 
@@ -90,7 +94,12 @@ Admin can set number of post submission/creation using a specific form.
 * Different form presets
 * 14 New and complex fields unlocked.
 * Conditional fields. You can set field to be dependable on other fields when rendering.
+* Advanced settings.
 * And more...
+
+== Pro Version ==
+
+Get your pro version here <a href="https://cybercraftit.com/wp-frontend-pro/" target="_blank">WP Frontend Pro</a>
 
 == Installation ==
 

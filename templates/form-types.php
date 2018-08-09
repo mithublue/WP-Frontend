@@ -1,19 +1,5 @@
 <template id="wpfront-form-types">
     <div class="wpfront-form-types">
-        <div class="mb20">
-            <?php
-            if( !Wpfront_Functions::is_pro() ) {
-                ?>
-                <el-alert
-                        title="<?php _e( 'Special Note', 'wpfront' ); ?>"
-                        type="warning"
-                        description="<?php _e( 'All pro extensions work with WP Frontend Pro.', 'wpfront' ); ?>"
-                        show-icon>
-                </el-alert>
-            <?php
-            }
-            ?>
-        </div>
         <?php $form_typs = Wpfront_Functions::get_form_types(); ?>
 	    <?php
 	    $i = 0;

@@ -16,5 +16,6 @@ include_once 'entry.php';
 include_once 'help.php';
 include_once 'promo-contact-form.php';
 include_once 'promo-registration-form.php';
+include_once 'promo-get-pro.php';
 include_once 'news.php';
 do_action('wpfront_admin_templates' );

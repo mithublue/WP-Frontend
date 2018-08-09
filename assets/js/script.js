@@ -16,6 +16,7 @@ var wpfront_routes = [
     {path: '/help', component: wpfrontend_help},
     {path: '/forms/promo-contact-form', component: promo_contact_form},
     {path: '/forms/promo-registration-form', component: promo_registration_form},
+    {path: '/get-pro', component: wpfront_get_pro},
     {path: '/cc-news', component: cc_news},
 ];
 

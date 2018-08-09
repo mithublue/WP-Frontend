@@ -52,6 +52,11 @@ class Wpfront_Admin {
         }
 
 	    $submenu['wpfront'][] = array( __( 'Help', 'wpfront' ), 'manage_options', 'admin.php?page=wpfront#/help' );
+
+        if( !Wpfront_Functions::is_pro() ) {
+	        $submenu['wpfront'][] = array( __( 'Upgrage to Pro', 'wpfront' ), 'manage_options', 'admin.php?page=wpfront#/get-pro' );
+        }
+
 	    $submenu['wpfront'][] = array( __( 'News', 'wpfront' ), 'manage_options', 'admin.php?page=wpfront#/cc-news' );
 
         add_action( 'load-'. $hook, array( $this, 'load_scripts' ) );
