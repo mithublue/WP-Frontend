@@ -98,6 +98,25 @@ trait Wpfront_Dashboard {
 	public function section_dashboard() {
 	    ?>
         <h3><?php _e( 'Hello '.get_userdata(get_current_user_id())->display_name); ?></h3>
+        <div class="oh">
+            <div class="fl mr20">
+                <img src="<?php echo get_avatar_url( get_current_user_id() ) ;?>" alt="">
+            </div>
+            <?php
+            $userdata = get_userdata(get_current_user_id());
+            ?>
+            <div class="fl">
+                <div>
+		            <?php _e( 'Name','wpfront' ); ?> : <?php echo $userdata->user_nicename; ?>
+                </div>
+                <div>
+		            <?php _e( 'Email','wpfront' ); ?> : <?php echo $userdata->user_email; ?>
+                </div>
+                <div>
+		            <?php _e( 'Website URL','wpfront' ); ?> : <?php echo $userdata->user_url ? $userdata->user_url : 'N\A'; ?>
+                </div>
+            </div>
+        </div>
         <?php
     }
 
