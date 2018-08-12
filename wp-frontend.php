@@ -7,7 +7,7 @@
  * Author: CyberCraft
  * Text Domain: wpfront
  * Domain Path: /languages
- * Version: 1.0.1
+ * Version: 1.0.1.1
  * License: GPL2
  */
 
@@ -15,7 +15,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-define( 'WPFRONT_VERSION', '1.0.1' );
+define( 'WPFRONT_VERSION', '1.0.1.1' );
 define( 'WPFRONT_ROOT', dirname(__FILE__) );
 define( 'WPFRONT_ASSET_PATH', plugins_url('assets',__FILE__) );
 define( 'WPFRONT_BASE_FILE', __FILE__ );
