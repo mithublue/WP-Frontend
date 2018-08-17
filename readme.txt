@@ -16,6 +16,10 @@ custom ones to match with your theme ? These are exactly what this plugin does.
 
 Additionally, you will have lots of options to customize everything to your needs.
 
+== Demo ==
+
+You can try the full featured demo of this plugin <a href="http://cybercraftit.com/demo/testwp/wp-frontend-pro/demo/">here</a>
+
 == Pro Version ==
 
 Get your pro version here <a href="https://cybercraftit.com/wp-frontend-pro/" target="_blank">WP Frontend Pro</a>
