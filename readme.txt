@@ -18,7 +18,8 @@ Additionally, you will have lots of options to customize everything to your need
 
 == Demo ==
 
-You can try the full featured demo of this plugin <a href="http://cybercraftit.com/demo/testwp/wp-frontend-pro/demo/">here</a>
+You can try the full featured demo of this plugin <a href="http://cybercraftit.com/demo/testwp/wp-frontend-pro/demo/">here</a> .
+There you will find 'WP Frontend' in admin menu from where you can create post form and use that in any post or page or any other post type. You will also have different settings there. Playing with those will let you be clear about the plugin.
 
 == Pro Version ==
 
