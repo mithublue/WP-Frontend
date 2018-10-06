@@ -1,8 +1,8 @@
 === WP Frontend ===
 Contributors: cybercraftit, mithublue
-Tags: wp frontend, wp front, user frontend, frontend submission, frontend posting, wp user frontend, frontend dashboard, Forms, registration, profile-builder, login, registration, contact, contact form, post form, form, forms, contact form, frontend, frontend post, custom form, form builder, form creator, form manager, form creation, contact forms, custom forms, forms builder, forms creator, forms manager, forms creation, post form, product form, dashboard builder, dashboard
+Tags: frontend, forms, login, contact, frontend, registration, dashboard, builder, submission, posting, wp user frontend, profile builder,  contact form, post form, form, forms, contact form, frontend, frontend post, custom form, form builder, form creator, form manager, form creation, contact forms, custom forms, forms builder, forms creator, forms manager, forms creation, post form, product form, dashboard builder, dashboard
 Requires at least: 3.0.1
-Tested up to: 4.9.7
+Tested up to: 4.9.8
 Stable tag: 1.0.1.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
